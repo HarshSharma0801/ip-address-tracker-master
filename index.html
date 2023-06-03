@@ -23,7 +23,7 @@
       <form action="#" method="get">
 
         <input type="text" placeholder="search for any IP address or domain" id="searchbar">
-        <button id="btn"><img src="images/icon-arrow.svg" alt=""></button>
+        <button id="btn" type="button"><img src="images/icon-arrow.svg" alt=""></button>
 
       </form>
     </div>
@@ -31,32 +31,60 @@
 
   <div id="data">
     <div class="data-containers">
-     <span class="headers">IP ADDRESS</span><br> 
-      <span class="content">
+      <div>
+        <span class="headers">IP ADDRESS</span>
+
+      </div>
+
+      <div>
+        <span class="content" id="Ip">
       
-      </span>
+        </span>
+      </div>
+      
 
     </div>
 
     <div class="data-containers">
-      <span class="headers">LOCATION</span><br>
-      <span class="content">
+      <div>
+        <span class="headers">LOCATION</span>
+      </div>
+      <div>
+        <span class="content" id="location-region">
         
-      </span>
+        </span>,<br>
+        <span class="content" id="location-country">
+  
+        </span>
+      </div>
+   
+
     </div>
 
     <div class="data-containers">
-     <span class="headers">TIMEZONE</span> <br>
-      <span class="content">
+      <div>
+        <span class="headers">TIMEZONE</span> 
+
+      </div>
+
+      <div>
+        <span class="content" id="timezone">
         
-      </span>
+        </span>
+      </div>
+     
     </div>
 
     <div class="data-containers">
-     <span class="headers">ISP</span> <br>
-      <span class="content">
+      <div>
+        <span class="headers">ISP</span> 
+      </div>
+     <div>
+      <span class="content" id="isp">
          
       </span>
+     </div>
+     
     </div>
 
   </div>

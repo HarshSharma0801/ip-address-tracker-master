@@ -81,6 +81,8 @@ form {
     padding: 20px;
     width: 250px;
     height: 130px;
+    display: flex;
+    flex-direction: column;
 }
 
 .headers{
@@ -92,11 +94,12 @@ form {
 
 .content {
     padding: 10px;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
-    font-weight: bolder;
 
 }
+
+
 
 @media only screen and (max-width:600px) {
     #banner {

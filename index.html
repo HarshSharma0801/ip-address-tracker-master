@@ -7,6 +7,11 @@
   <!-- displays site properly based on user's device -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
   <title>Frontend Mentor | IP Address Tracker</title>
   <link rel="stylesheet" href="styles.css">
@@ -30,67 +35,53 @@
   </div>
 
   <div id="data">
-    <div class="data-containers">
-      <div>
-        <span class="headers">IP ADDRESS</span>
+   <div class="container-data">
 
-      </div>
+   <div class="headings">IP ADDRESS</div>
+   <div class="headings border-left">LOCATION</div>
+   <div class="headings border-left">TIMEZONE</div>
+   <div class="headings border-left">ISP</div>
 
-      <div>
-        <span class="content" id="Ip">
-      
-        </span>
-      </div>
-      
+   </div>
 
-    </div>
+   <div class="container-data">
+    <div class="dataGen" id="Ip"></div>
+    <div class="dataGen border-left" ><span id="location-city"></span>, <span id="location-region"></span>, <span  id="location-country"></span></div>
+    <div class="dataGen border-left" id="timezone"></div>
+    <div class="dataGen border-left" id="isp"></div>
 
-    <div class="data-containers">
-      <div>
-        <span class="headers">LOCATION</span>
-      </div>
-      <div>
-        <span class="content" id="location-region">
-        
-        </span>,<br>
-        <span class="content" id="location-country">
-  
-        </span>
-      </div>
-   
+
+
+   </div>
+
+ 
+  </div>
+<div id="mobile">
+ <div id="data-mobile">
+  <div class="data-containers-mobile">
+    <div class="headings-mobile">IP ADDRESS</div>
+    <div class="container-data-mobile IP">
 
     </div>
-
-    <div class="data-containers">
-      <div>
-        <span class="headers">TIMEZONE</span> 
-
-      </div>
-
-      <div>
-        <span class="content" id="timezone">
-        
-        </span>
-      </div>
-     
+  </div>
+  <div class="data-containers-mobile">
+    <div class="headings-mobile">LOCATION</div>
+    <div class="container-data-mobile">
+      <span class="Location city"></span>, <span class="Location region"></span>, <span class="Location country"></span>
     </div>
-
-    <div class="data-containers">
-      <div>
-        <span class="headers">ISP</span> 
-      </div>
-     <div>
-      <span class="content" id="isp">
-         
-      </span>
-     </div>
-     
-    </div>
-
+  </div>
+  <div class="data-containers-mobile">
+    <div class="headings-mobile">TIMEZONE</div>
+    <div class="container-data-mobile timezone"></div>
+  </div>
+  <div class="data-containers-mobile">
+    <div class="headings-mobile">ISP</div>
+    <div class="container-data-mobile isp"></div>
   </div>
 
 
-
+ </div>
+</div>
 
 
 
@@ -98,9 +89,12 @@
   <img src="images/pattern-bg-desktop.png" alt="image" id="banner">
   <img src="images/pattern-bg-mobile.png" alt="image" id="banner-mobile">
 
+  <div id="map">
+
+  </div>
 
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

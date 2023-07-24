@@ -63,6 +63,7 @@ var marker = L.marker([28.648799896240234,77.28150177001953],{icon: Icon}).addTo
   
     })
   }
+//return
 
   button.addEventListener('click',()=>{
     getData(searchbar.value);
